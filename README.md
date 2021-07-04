@@ -1,2 +1,2 @@
-# Rucoy-Online-Lizard-Route
-## [Map tool for Lizard maze](Website-link-here)
+# [Rucoy-Online-Lizards-2-Pathfinder](Website-link-here)
+##
