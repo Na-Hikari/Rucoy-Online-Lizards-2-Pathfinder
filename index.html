@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-        <link rel="stylesheet" href="index.css"/>
+        <link rel="style.css" href="index.css"/>
   </head>
   <body>
         <img src="https://play-lh.googleusercontent.com/8i1aKDyMFKlrko2JBKmjYFwsjntgQg5TRn7w-BiPHWK9j-PuLd8RQs12lw95g0t0sQ"/>
     <h1>Lizard maze tool!</h1>
-    <p>Input currently room and destination.</p>
+    <p>Input current room and destination.</p>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 table{
@@ -29,7 +29,7 @@ input{
 
 </style>
 <script>
-var RUTE = {
+  var RUTE = {
   1:[16,18],
   2:[17,13],
   3:[6,13],
@@ -58,7 +58,7 @@ var RUTE = {
 };
 var shortest = true;
 
-function cariRute(from,to,max,path){
+  function cariRute(from,to,max,path){
   if(!max)max=10;
   if(!path)path={T:"",R:from+"_"};
   if(path.T.length >= max)return [];
