@@ -158,14 +158,17 @@ function searchRoute(){
         row.appendChild((tmp = document.createElement("td")) && (tmp.innerText = found.T.length) && tmp );
         row.appendChild((tmp = document.createElement("th")) && (tmp.innerText = "Room") && tmp );
         for(let j of found.R.slice(0,-1).split("_").slice(1)){
-         row.appendChild((tmp = document.createElement("td")) && (tmp.innerText = j) && tmp );
+        row.appendChild((tmp = document.createElement("td")) && (tmp.innerText = j) && tmp );
         }
         table.appendChild(row);
 
-
+        table.center {
+        margin-left: auto; 
+        margin-right: auto;
+        }
         table.setAttribute("border","1");
         result.appendChild(table);
-      }
+        }
 
 
      return;
