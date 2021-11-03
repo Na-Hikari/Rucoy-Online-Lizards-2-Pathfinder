@@ -8,7 +8,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: white;
   text-align: center;
 }
 img {
@@ -26,6 +25,7 @@ img {
     <h3><span style="background-color: black; color: white;">Floor  1: Exit<span/></h3>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+<table class="center">
 table{
   border-collapse: collapse;
   margin: 5px;
@@ -113,6 +113,7 @@ var shortest = true;
 
   }
 
+
   return result;
 }
 
@@ -122,11 +123,11 @@ function searchRoute(){
   let to = parseInt(document.getElementById('to').value);
 
   if(!from || from<1 || from>25){
-    from = 4;
+    from = 21;
     document.getElementById('from').value = from;
   }
   if(!to || to<1 || to>25){
-    to = 23;
+    to = 13;
     document.getElementById('to').value = to;
   }
 
@@ -167,6 +168,7 @@ function searchRoute(){
         result.appendChild(table);
         }
 
+
      return;
     }
     i++;
@@ -197,7 +199,7 @@ onload = function(){
   </tr>
 </table>
 <br/>
-<p><span style="background-color: black;>Input current room and destination.</span></p>
+<p><span style="background-color: black; color: white;">Input current room and destination.</span></p>
 From:<input type="number" min="1" max="25" id="from" onchange="" value="4">&nbsp;
 To:<input type="number" min="1" max="25" id="to" onchange="" value="23">
 <button onclick="searchRoute()">GO</button>
