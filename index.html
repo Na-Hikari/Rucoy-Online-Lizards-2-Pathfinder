@@ -5,8 +5,10 @@
   </head>
   <body>
         <img src="https://play-lh.googleusercontent.com/8i1aKDyMFKlrko2JBKmjYFwsjntgQg5TRn7w-BiPHWK9j-PuLd8RQs12lw95g0t0sQ"/>
-    <h1>Lizard maze tool!</h1>
-    <p>Input current room and destination.</p>
+    <h1>Lizards 2 Pathfinder!</h1>
+    <h2>Floor 13: L3
+        Floor 21: Exit
+        Floor  1: Exit</p>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 table{
@@ -161,7 +163,6 @@ onload = function(){
   searchRoute();
 };
 </script>
-<h2>Lizards 2 Path finder</h2>
 <table>
   <tr>
     <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
@@ -180,6 +181,7 @@ onload = function(){
   </tr>
 </table>
 <br/>
+<p>Input current room and destination.</p>
 From:<input type="number" min="1" max="25" id="from" onchange="" value="4">&nbsp;
 To:<input type="number" min="1" max="25" id="to" onchange="" value="23">
 <button onclick="searchRoute()">GO</button>
