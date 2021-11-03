@@ -160,12 +160,12 @@ function searchRoute(){
         for(let j of found.R.slice(0,-1).split("_").slice(1)){
         row.appendChild((tmp = document.createElement("td")) && (tmp.innerText = j) && tmp );
         }
-        table.appendChild(row);
-
         table.center {
         margin-left: auto; 
         margin-right: auto;
         }
+        table.appendChild(row);
+
         table.setAttribute("border","1");
         result.appendChild(table);
         }
