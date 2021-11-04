@@ -125,11 +125,11 @@ function searchRoute(){
   let to = parseInt(document.getElementById('to').value);
 
   if(!from || from<1 || from>25){
-    from = 21;
+    from = 4;
     document.getElementById('from').value = from;
   }
   if(!to || to<1 || to>25){
-    to = 13;
+    to = 23;
     document.getElementById('to').value = to;
   }
 
@@ -202,8 +202,8 @@ onload = function(){
 </table>
 <br/>
 <p><span style="background-color: black; color: white;">Input current room and destination.</span></p>
-From:<input type="number" min="1" max="25" id="from" onchange="" value="4">&nbsp;
-To:<input type="number" min="1" max="25" id="to" onchange="" value="23">
+From:<input type="number" min="1" max="25" id="from" onchange="" value="21>&nbsp;
+To:<input type="number" min="1" max="25" id="to" onchange="" value="13">
 <button onclick="searchRoute()">GO</button>
 <div id="result"></div>
 <table class="center">
