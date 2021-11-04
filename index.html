@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="style.css" href="index.html"/>
   <style>
 body {
@@ -25,31 +26,36 @@ img {
     <h3><span style="background-color: bLack; color: white;">Floor 13: L3<span/></h3>
     <h3><span style="background-color: black; color: white;">Floor 21: Exit<span/></h3>
     <h3><span style="background-color: black; color: white;">Floor  1: Exit<span/></h3>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+
+  <style>
 <table class="center">
-table.center {
-  margin-left: auto; 
-  margin-right: auto;
-}
-table {
+table, th, td {
+  text-align: center;
+  border: 1px solid black;
   border-collapse: collapse;
-  margin: 5px;
 }
 table tr {
   padding: 5px;
   text-align: center;
-  border: 1px solid;
+  border: 1px solid black;
   background: #bef;
 }
 table tr td {
   width: 20px;
 }
+table {
+  border-collapse: collapse;
+  margin: 5px;
+}
 input {
   width: 50px;
-</table>
-</style>
-<script>
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+/style>
+  <script>
   var RUTE = {
   1:[16,18],
   2:[17,13],
@@ -181,8 +187,8 @@ function searchRoute(){
 onload = function(){
   searchRoute();
 };
-<table class="center">
 </script>
+<table class="center">
   <tr>
     <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
   </tr>
@@ -205,5 +211,6 @@ From:<input type="number" min="1" max="25" id="from" onchange="" value="4>&nbsp;
 To:<input type="number" min="1" max="25" id="to" onchange="" value="23">
 <button onclick="searchRoute()">GO</button>
 <div id="result"></div>
+
   </body>
 </html>
