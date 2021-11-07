@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="style.css" href="index.html"/>
-<title> Lizard 2 Pathfinder </title>
-  <link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/Na-Hikari/Rucoy-Online-Lizards-2-Pathfinder/main/images/General_Krinok.gif"/>
+ <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lizard 2 Pathfinder</title>
+
+    <link rel="style.css" href="index.html"/>
+    <link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/Na-Hikari/Rucoy-Online-Lizards-2-Pathfinder/main/images/General_Krinok.gif"/>
   <style>
 body {
   background-image: url('https://raw.githubusercontent.com/Na-Hikari/Rucoy-Online-Lizards-2-Pathfinder/main/images/spirit%20background.jpg');
@@ -19,24 +22,21 @@ img {
 }
 </style>
 </head>
-<body>
-
+  <body>
 <a href="https://www.rucoyonline.com">
-    <img src="https://raw.githubusercontent.com/Na-Hikari/Rucoy-Online-Lizards-2-Pathfinder/main/images/Rucoy%20Online.png" alt="Rucoy Online" style="width:100%;">
+  <img src="https://raw.githubusercontent.com/Na-Hikari/Rucoy-Online-Lizards-2-Pathfinder/main/images/Rucoy%20Online.png" alt="Rucoy Online" style="width:100%;">
 </a>
 
-    <h1><span style="background-color: black; color: white;">Lizards 2 Pathfinder!<span/>
+  <h1><span style="background-color: black; color: white;">Lizards 2 Pathfinder!<span/>
 </h1>
-    <h3><span style="background-color: bLack; color: white;">Floor 13: L3<span/>
+  <h3><span style="background-color: bLack; color: white;">Floor 13: L3<span/>
 </h3>
-    <h3><span style="background-color: black; color: white;">Floor 21: Exit<span/>
+  <h3><span style="background-color: black; color: white;">Floor 21: Exit<span/>
 </h3>
-    <h3><span style="background-color: black; color: white;">Floor  1: Exit<span/>
+  <h3><span style="background-color: black; color: white;">Floor  1: Exit<span/>
 </h3>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
+  <style>
 table{
   border-collapse: collapse;
   margin: 5px;
@@ -62,33 +62,33 @@ table {
   margin: 0 auto 0 auto;
 }
 </style>
-<script>
-var RUTE = {
-  1:[16,8],
-  2:[17,13],
-  3:[6,13],
-  4:[7,23],
-  5:[11,6],
-  6:[9,7],
-  7:[9,6],
-  8:[19,22],
-  9:[11,21],
-  10:[22,24],
-  11:[20,7],
-  12:[7,18],
-  13:[16,12],
-  14:[21,15],
-  15:[1,22],
-  16:[15,10],
-  17:[15,22],
-  18:[9,4],
-  19:[25,17],
-  20:[9,3],
-  21:[5,12],
-  22:[15,17],
-  23:[1,9],
-  24:[14,17],
-  25:[2,15],
+  <script>
+  var RUTE = {
+    1:[16,8],
+    2:[17,13],
+    3:[6,13],
+    4:[7,23],
+    5:[11,6],
+    6:[9,7],
+    7:[9,6],
+    8:[19,22],
+    9:[11,21],
+    10:[22,24],
+    11:[20,7],
+    12:[7,18],
+    13:[16,12],
+    14:[21,15],
+    15:[1,22],
+    16:[15,10],
+    17:[15,22],
+    18:[9,4],
+    19:[25,17],
+    20:[9,3],
+    21:[5,12],
+    22:[15,17],
+    23:[1,9],
+    24:[14,17],
+    25:[2,15],
 };
 var shortest = true;
 
@@ -215,14 +215,14 @@ onload = function(){
 <br/>
 <p><span style="background-color: black; color: white;"> Input Current Location and Destination.</span>
 </p>
-From:<input type="number" min="1" max="25" id="from" onchange="" value="4">&nbsp;
-To:<input type="number" min="1" max="25" id="to" onchange="" value="23">
+<p><span style="background-color: black; color: white;">From:</span></p><input type="number" min="1" max="25" id="from" onchange="" value="4">&nbsp;
+<p><span style="background-color: black; color: white;">To:</span></p><input type="number" min="1" max="25" id="to" onchange="" value="23">
 <button onclick="searchRoute()">GO</button>
-
 <div id="result">
   <table align="center">
 </div>
-
 <footer role="contentinfo">
-   <p style="color:white;"><small>&#169; 2021 Lizards 2 Pathfinder</small></p>
+  <p style="color:white;"><small>&#169; 2021 Lizards 2 Pathfinder</small></p>
 </footer>
+</body>
+</html>
