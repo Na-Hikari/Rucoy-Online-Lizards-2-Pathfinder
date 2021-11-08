@@ -191,11 +191,6 @@ onload = function(){
   searchRoute();
 };
 </script>
-}
-  <div id="result">
-    <table align="center">
-</div>
-}
 <table class="center">
   <tr>
     <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
@@ -219,8 +214,10 @@ onload = function(){
 From:<input type="number" min="1" max="25" id="from" onchange="" value="4">&nbsp;
 To:<input type="number" min="1" max="25" id="to" onchange="" value="23">
 <button onclick="searchRoute()">GO</button>
-
+  <div id="result">
+    <table align="center">
+</div>
+<br/>
 <p style="text-align: center"> Copyright &copy; 2021-<script>document.write(new Date().getFullYear())</script> Lizard 2 Pathfinder All Rights Reserved</p>
-
 </body>
 </html>
